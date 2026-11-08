@@ -1,0 +1,1 @@
+# Static Portfolio and Blog pages
