@@ -44,8 +44,8 @@ params:
     buttons:
       - name: About
         url: "/about"
-      - name: Projects
-        url: "/projects"
+      - name: Portfolio
+        url: "/portfolio"
       - name: Resume
         url: "/resume.pdf"
       - name: Writings
