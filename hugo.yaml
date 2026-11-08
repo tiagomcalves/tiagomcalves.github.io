@@ -1,7 +1,7 @@
-baseURL: https://tiagomcalves.github.io
+baseURL: https://tiagomcalves.github.io/tiagomcalves.github.io
 locale: en-us
 title: Tiago Alves
-theme: ["PaperMod"]
+theme: PaperMod
 
 menu:
   main:     

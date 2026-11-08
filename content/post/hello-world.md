@@ -7,4 +7,4 @@ tags: ['introduction']
 editPost:
   URL: false
 ---
-This will be a place to write my findings
+Hello! My name is Tiago, I am a computer engineering graduate and this website will serve as a place to dump my thinkering adventures, post my findings and organize my portfolio.
