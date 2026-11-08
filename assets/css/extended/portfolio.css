@@ -1,0 +1,19 @@
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.portfolio-card {
+  display: block;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+  padding: 1rem;
+}
+
+.portfolio-card img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 6px;
+}

@@ -1,0 +1,14 @@
+.fig-w-40 {
+    max-width: 100%;
+    margin: auto;
+}
+
+.fig-w-40 img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 8px;
+}
+
+.fig-w-40 figcaption {
+    margin-top: 0px;
+}

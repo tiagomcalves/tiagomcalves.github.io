@@ -1,0 +1,164 @@
+baseURL: https://tiagomcalves.github.io
+locale: en-us
+title: Tiago Alves
+theme: ["PaperMod"]
+
+menu:
+  main:     
+  - identifier: about
+    name: About
+    url: /about
+    weight: 10
+  - identifier: portfolio
+    name: Portfolio
+    url: /portfolio
+    weight: 10
+  - identifier: resume
+    name: Resume
+    url: /resume.pdf
+    weight: 10
+  - identifier: blog
+    name: Blog
+    url: /post/
+    weight: 10
+  - identifier: tags
+    name: Tags
+    url: /tags/
+    weight: 20
+    
+    
+params:
+  defaultTheme: auto # to switch between dark or light according to browser theme
+  ShowBreadCrumbs: true
+  ShowPostNavLinks: true
+  ShowCodeCopyButtons: true
+      
+  profileMode:
+    enabled: true
+    title: "Tiago Alves"
+    subtitle: "Computer Engineering Graduate"
+    imageUrl: "https://avatars.githubusercontent.com/u/271846427?v=4" # optional
+ #   imageTitle: "none" # optional
+    imageWidth: 120 # custom size
+    imageHeight: 120 # custom size
+    buttons:
+      - name: About
+        url: "/about"
+      - name: Projects
+        url: "/projects"
+      - name: Resume
+        url: "/resume.pdf"
+      - name: Writings
+        url: "/post"
+
+  socialIcons: # optional
+    - name: "GitHub"
+      url: "https://github.com/tiagomcalves"
+    - name: "GitLab"
+      url: "https://gitlab.com/tiago-alves"
+    - name: "LinkedIn"
+      url: "https://www.linkedin.com/in/tiago-mc-alves/"
+    - name: "Youtube"
+      url: "https://www.youtube.com/@tiago-alves"
+  editPost:
+    URL: "https://github.com/tiagomcalves/tiagomcalves.github.io/content"
+    Text: "Suggest Changes" # edit text
+    appendFilePath: true # to append file path to Edit link
+    
+    
+# Default mounts
+# https://gohugo.io/configuration/module/?utm_source=chatgpt.com#default-mounts
+
+module:
+  mounts:
+  - disableWatch: false
+    files: null
+    sites:
+      complements:
+        languages: null
+        roles: null
+        versions: null
+      matrix:
+        languages: null
+        roles: null
+        versions: null
+    source: content
+    target: content
+  - disableWatch: false
+    files: null
+    sites:
+      complements:
+        languages: null
+        roles: null
+        versions: null
+      matrix:
+        languages: null
+        roles: null
+        versions: null
+    source: data
+    target: data
+  - disableWatch: false
+    files: null
+    sites:
+      complements:
+        languages: null
+        roles: null
+        versions: null
+      matrix:
+        languages: null
+        roles: null
+        versions: null
+    source: layouts
+    target: layouts
+  - disableWatch: false
+    files: null
+    sites:
+      complements:
+        languages: null
+        roles: null
+        versions: null
+      matrix:
+        languages: null
+        roles: null
+        versions: null
+    source: i18n
+    target: i18n
+  - disableWatch: false
+    files: null
+    sites:
+      complements:
+        languages: null
+        roles: null
+        versions: null
+      matrix:
+        languages: null
+        roles: null
+        versions: null
+    source: archetypes
+    target: archetypes
+  - disableWatch: false
+    files: null
+    sites:
+      complements:
+        languages: null
+        roles: null
+        versions: null
+      matrix:
+        languages: null
+        roles: null
+        versions: null
+    source: assets
+    target: assets
+  - disableWatch: false
+    files: null
+    sites:
+      complements:
+        languages: null
+        roles: null
+        versions: null
+      matrix:
+        languages: null
+        roles: null
+        versions: null
+    source: static
+    target: static

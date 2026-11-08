@@ -1,0 +1,14 @@
+{{- $theme := .Params.theme -}}
+{{- if or (eq $theme "dark") (eq $theme "light") }}
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const theme = {{ $theme | jsonify | safeJS }};
+        document.querySelector("html").dataset.theme = theme;
+    });
+</script>
+<style>
+    #theme-toggle {
+        display: none;
+    }
+</style>
+{{- end }}

@@ -1,0 +1,55 @@
+{{ define "main" }}
+<style>
+.post-tags li {
+    display: inline-block;
+    padding: 0 10px;
+    color: var(--secondary);
+    background: var(--code-bg);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    
+    margin-top: 8px;
+}
+</style>
+<header class="page-header">
+    <h1>{{ .Title }}</h1>
+    {{ with .Description }}
+        <div class="post-description">{{ . }}</div>
+    {{ end }}
+</header>
+
+<div class="post-content">
+    {{ .Content }}
+</div>
+
+<div class="portfolio-grid">
+    {{/* Hugo Go template logic can be commented like this and it won't show on the generated HTML */}}
+    {{ $posts := where (where site.RegularPages "Section" "post") "Params.portfolio" true }}
+    {{ $posts = sort $posts "Params.portfolioWeight" "asc" }}   {{/* "asc" will sort weight ascending, so 1 will show first */}}
+
+    {{ range $posts }}
+        {{ $post := . }}
+
+        <a href="{{ $post.RelPermalink }}" class="portfolio-card">
+
+            <h2>{{ $post.Title }}</h2>
+            <p>{{ $post.Description }}</p>
+
+            {{ with $post.Resources.GetMatch $post.Params.cover.image }}
+                <img src="{{ .RelPermalink }}" alt="{{ $post.Params.cover.alt }}">
+            {{ end }}
+            
+            {{ with $post.Params.tags }}
+            <ul class="post-tags">
+                {{ range . }}
+                <li>
+                    {{ . }}  {{/* the . is the tag string, wrap this string in a badge*/}}
+                </li>
+                {{ end }}
+            </ul>
+            {{ end }}
+        </a>
+    {{ end }}
+</div>
+
+{{ end }}

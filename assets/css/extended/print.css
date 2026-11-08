@@ -1,0 +1,22 @@
+@media print {
+    body,
+    .dark {
+        --theme: #fff;
+        --entry: #fff;
+        --primary: #000;
+        --secondary: #000;
+        --tertiary: #eee;
+        --content: #000;
+        --code-block-bg: #f5f5f5;
+        --code-bg: #f5f5f5;
+    }
+
+    body {
+        background: #fff !important;
+        color: #000 !important;
+    }
+
+    a {
+        color: #000 !important;
+    }
+}

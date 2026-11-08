@@ -1,0 +1,9 @@
+<style>
+.post-content {
+    width: calc(100% + {{ .Get 0 }}px);
+    max-width: none;
+    margin-left: calc(-{{ .Get 0 }}px / 2);
+}
+</style>
+
+{{ .Inner }}
